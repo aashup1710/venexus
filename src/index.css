@@ -1,0 +1,31 @@
+@import 'tailwindcss/tailwind.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Newsreader', serif;
+}
+
+@layer components {
+  /* .btn-primary {
+      @apply py-1.5 px-3 text-center bg-blue-700 rounded-md text-white;
+  } */
+}
+
+@keyframes continuousJump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.jump-animation {
+  animation: continuousJump 2s ease-in-out infinite;
+}
